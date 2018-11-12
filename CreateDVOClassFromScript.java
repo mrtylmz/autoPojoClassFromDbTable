@@ -23,14 +23,11 @@ import tr.gov.adalet.uyap3.ui.sample.base.SamplePanelBase;
 import tr.gov.adalet.uyap3.ui.sample.base.UyapSample;
 
 @SuppressWarnings("serial")
-@UyapSample(
-		identifier="DVO Oluþturma", 
-		tooltip="DVO Oluþturma",
-		group="Faydalý Araçlar#DVO Sýnýflarý")
+
 public class CreateDVOClassFromScript extends SamplePanelBase {
 
 	/**
-	 * @author AB174389 Murat YILMAZ
+	 * @author Murat YILMAZ
 	 */
 	Locale localeEn = new Locale("en_EN");
 	Locale trlocale = new Locale("tr-TR");
@@ -151,7 +148,7 @@ public class CreateDVOClassFromScript extends SamplePanelBase {
 					String valueData=colDataType.toString();
 					if(valueData.contains("("))
 					{
-						valueData = valueData.split("[\\(\\)]")[1]; //parantez içindeki veri
+						valueData = valueData.split("[\\(\\)]")[1]; //parantez iÃ§indeki veri
 						valueData = valueData.replaceAll(", ", "");
 						int valueInt=Integer.parseInt(valueData);
 						if(valueInt<5)
